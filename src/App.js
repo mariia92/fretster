@@ -3,6 +3,8 @@ import HomePage from "./HomePage";
 import UnterrichtPage from "./UnterrichtPage";
 import "./App.css";
 
+// const BASE_ROUTE = `${window.location.host}/fretster`;
+
 const App = () => {
   const navigationButtons = [
     { text: "home", hash: "" },
@@ -17,15 +19,15 @@ const App = () => {
   const [currentPage, setCurrentPage] = React.useState(getCurrentPage());
 
   const navigationHook = (hash) => {
-    window.location.href = `${window.location.href.split('#')[0]}${hash}`;
-    setCurrentPage(navigationButtons.findIndex((b) => b.hash === hash))
-  }
+    window.location.href = `${window.location.href.split("#")[0]}${hash}`;
+    setCurrentPage(navigationButtons.findIndex((b) => b.hash === hash) || 0);
+  };
 
   const Pages = {
     home: HomePage,
     unterricht: UnterrichtPage,
   };
-  const PageToRender = Pages[navigationButtons[currentPage]?.text] || HomePage;
+  const PageToRender = Pages[navigationButtons[currentPage || 0]?.text];
 
   return (
     <PageToRender
