@@ -5,17 +5,21 @@ import "./App.css";
 
 const App = () => {
   const navigationButtons = [
-    { text: "home", href: "/" },
-    { text: "unterricht", href: "/unterricht" },
-    { text: "workshops", href: "/workshops" },
-    { text: "lehrer", href: "/lehrer" },
-    { text: "events", href: "/events" },
-    { text: "kontakt", href: "/kontakt" },
+    { text: "home", hash: "" },
+    { text: "unterricht", hash: "#/unterricht" },
+    { text: "workshops", hash: "#/workshops" },
+    { text: "lehrer", hash: "#/lehrer" },
+    { text: "events", hash: "#/events" },
+    { text: "kontakt", hash: "#/kontakt" },
   ];
   const getCurrentPage = () =>
-    navigationButtons.findIndex((b) => b.href === window.location.pathname) ||
-    0;
+    navigationButtons.findIndex((b) => b.hash === window.location.hash) || 0;
   const [currentPage, setCurrentPage] = React.useState(getCurrentPage());
+
+  const navigationHook = (hash) => {
+    window.location.href = `${window.location.href.split('#')[0]}${hash}`;
+    setCurrentPage(navigationButtons.findIndex((b) => b.hash === hash))
+  }
 
   const Pages = {
     home: HomePage,
@@ -30,7 +34,7 @@ const App = () => {
         isActive: i === currentPage,
       }))}
       currentPage={currentPage}
-      navigationHook={setCurrentPage}
+      navigationHook={navigationHook}
     />
   );
 };

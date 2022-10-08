@@ -14,11 +14,11 @@ const Navigation = ({ buttons, navigationHook }) => {
           key={button.text}
         >
           <a
-            href={button.href}
+            href={button.hash}
             onClick={(event) => {
               event.preventDefault();
               event.stopPropagation();
-              window.location.href = button.href;
+              navigationHook(button.hash)
             }}
           >
             {button.text}
