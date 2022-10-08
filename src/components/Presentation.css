@@ -1,0 +1,55 @@
+.Presentation {
+  background-color: rgb(227 227 232);
+  padding: 40px 80px;
+  letter-spacing: .1em;
+}
+
+.PresentationHeadline {
+  margin-bottom: 40px;
+  font-size: 70px;
+  text-align: center;
+  color: rgb(227 227 231);
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #cb7d7d, 1px -1px 0 #cb7d7d, -1px 1px 0 #cb7d7d,
+    1px 1px 0 #cb7d7d;
+  letter-spacing: 3px;
+}
+
+.TileWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Tile {
+  flex-basis: 30%;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.TileTitle {
+  font-size: 40px;
+  color: rgb(154 154 173);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.TileButton {
+  background-color: rgb(154 154 173);
+  border-radius: 6px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 5px;
+  letter-spacing: 1.5;
+}
+
+.TileImage {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.TileDescription {
+  font-size: 0.9em;
+}

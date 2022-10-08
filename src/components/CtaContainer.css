@@ -1,0 +1,18 @@
+.CtaContainer {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.CtaButton {
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #e04b69;
+  background: transparent;
+}
+
+.CtaButton-filled {
+  background-color: #e04b69;
+  color: #fff;
+}

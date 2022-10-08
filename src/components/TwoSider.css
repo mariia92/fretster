@@ -1,0 +1,60 @@
+.TwoSider {
+  display: flex;
+  align-items: center;
+}
+
+.TwoSider.isReversed {
+  flex-direction: row-reverse;
+}
+
+.TwoSiderTextWraper {
+  flex-basis: 40%;
+  padding: 70px;
+}
+
+.TwoSiderImageWrapper {
+  flex-basis: 60%;
+  background-position: center;
+  background-size: cover;
+  align-self: stretch;
+}
+
+.TwoSiderTextWraper.isProportional,
+.TwoSiderImageWrapper.isProportional {
+  flex-basis: 50%;
+  width: 50%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  box-sizing: border-box;
+}
+
+.TwoSiderImage {
+  max-height: 320px;
+}
+
+.TwoSider-Title {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.TwoSider-Title.huge {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.TwoSider-Title.big {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.TwoSider-Cta {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+  width: fit-content;
+}

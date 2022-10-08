@@ -1,0 +1,40 @@
+
+.SliderWrapper {
+  margin-top: 30px;
+  padding-bottom: 70px;
+}
+
+.awssld {
+  --control-bullet-color: rgb(212, 211, 211);
+  --control-bullet-active-color: #e04b69;
+  --content-background-color: transparent;
+  --slider-height-percentage: 25%;
+}
+
+.awssld__bullets .awssld__bullets--active {
+  transform: scale(1);
+}
+
+.SliderPage {
+  width: 50%;
+}
+
+.SliderTitle {
+  text-align: center;
+  color: rgb(154 154 173);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .15em;
+}
+
+.SliderSignature {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 rgb(154 154 173), 1px -1px 0 rgb(154 154 173),
+    -1px 1px 0 rgb(154 154 173), 1px 1px 0 rgb(154 154 173);
+  letter-spacing: 3px;
+  font-size: 25px;
+}
