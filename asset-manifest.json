@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fretster/static/css/main.8d111818.css",
-    "main.js": "/fretster/static/js/main.0a72e4b2.js",
+    "main.js": "/fretster/static/js/main.b398d3b8.js",
     "static/js/787.8809f293.chunk.js": "/fretster/static/js/787.8809f293.chunk.js",
     "static/media/guitar_rock.png": "/fretster/static/media/guitar_rock.acc1ce4f2c1f9714cfa7.png",
     "static/media/piano.png": "/fretster/static/media/piano.05a966ce5551625dac25.png",
@@ -14,11 +14,11 @@
     "static/media/logo_grey.png": "/fretster/static/media/logo_grey.899bb3668c30a94acdfa.png",
     "index.html": "/fretster/index.html",
     "main.8d111818.css.map": "/fretster/static/css/main.8d111818.css.map",
-    "main.0a72e4b2.js.map": "/fretster/static/js/main.0a72e4b2.js.map",
+    "main.b398d3b8.js.map": "/fretster/static/js/main.b398d3b8.js.map",
     "787.8809f293.chunk.js.map": "/fretster/static/js/787.8809f293.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8d111818.css",
-    "static/js/main.0a72e4b2.js"
+    "static/js/main.b398d3b8.js"
   ]
 }
